@@ -1,0 +1,36 @@
+{
+  "itemGroup.cookietology.cookietology": "Cookietology",
+
+  "item.cookietology.soft_butter": "Mantequilla Suave",
+  "item.cookietology.cookie": "Galleta",
+  "item.cookietology.flour": "Harina",
+  "item.cookietology.soft_dough": "Masa Suave",
+  "item.cookietology.cookie_shaped_dough": "Masa con Forma de Galleta",
+  "item.cookietology.cookie_mold": "Molde de Galleta",
+  "item.cookietology.simple_display": "Pantalla Simple",
+
+  "cookie.saturation": "Saturación: %s",
+  "cookie.nutrition": "Nutrición: %s",
+  "cookie.eat_speed": "Velocidad de Consumo: %s",
+  "cookie.eat_speed.ticks": " Ticks",
+  "cookie.effects": "Efectos:",
+  "dough.thickness": "Grosor: %s",
+  "dough.brilliance": "Brillo: %s",
+
+  "block.cookietology.butterator": "Mantecador",
+  "block.cookietology.butterator_fan": "Ventilador de Mantecador",
+  "block.cookietology.broken_butterator_fan": "Ventilador de Mantecador Roto",
+  "block.cookietology.mixing_bowl": "Tazón de Mezcla",
+  "block.cookietology.baker": "Horneador",
+
+  "container.butterator": "Mantecador",
+  "container.baker": "Horneador",
+
+  "subtitles.cookietology.butterator_fan.repair": "Ventilador Reparado",
+  "subtitles.cookietology.mixing_bowl.mix": "Mezclando en un tazón",
+
+  "machineInfo.missing_fan": "¡Falta Ventilador!",
+  "machineInfo.cooldown": "Enfriándose",
+
+  "jei.category.butterator.butter_amount": "La cantidad de mantequilla puede variar entre 1 y 4"
+}

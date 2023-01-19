@@ -1,0 +1,16 @@
+{
+  "type": "cookietology:mixing",
+  "ingredients": [
+    {
+      "item": "cookietology:soft_dough"
+    },
+    {
+      "item": "cookietology:flour"
+    }
+  ],
+  "result": {
+    "item": "cookietology:soft_dough",
+    "count": 1
+  },
+  "attempts": 5
+}

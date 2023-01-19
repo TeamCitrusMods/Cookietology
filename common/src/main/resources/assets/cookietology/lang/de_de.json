@@ -1,0 +1,36 @@
+{
+  "itemGroup.cookietology.cookietology": "Cookietology",
+
+  "item.cookietology.soft_butter": "Weiche Butter",
+  "item.cookietology.cookie": "Keks",
+  "item.cookietology.flour": "Mehl",
+  "item.cookietology.soft_dough": "Weicher Teig",
+  "item.cookietology.cookie_shaped_dough": "Teig in Keksform",
+  "item.cookietology.cookie_mold": "Keksform",
+  "item.cookietology.simple_display": "Einfache Anzeige",
+
+  "cookie.saturation": "Sättigung: %s",
+  "cookie.nutrition": "Ernährung: %s",
+  "cookie.eat_speed": "Essensgeschwindigkeit: %s",
+  "cookie.eat_speed.ticks": "Ticks",
+  "cookie.effects": "Effekte:",
+  "dough.thickness": "Dicke: %s",
+  "dough.brilliance": "Brillanz: %s",
+
+  "block.cookietology.butterator": "Butterator",
+  "block.cookietology.butterator_fan": "Butterator-Lüfter",
+  "block.cookietology.broken_butterator_fan": "Defekter Butterator-Lüfter",
+  "block.cookietology.mixing_bowl": "Rührschüssel",
+  "block.cookietology.baker": "Bäcker",
+
+  "container.butterator": "Butterator",
+  "container.baker": "Bäcker",
+
+  "subtitles.cookietology.butterator_fan.repair": "Lüfter repariert",
+  "subtitles.cookietology.mixing_bowl.mix": "Mischen in einer Schüssel",
+
+  "machineInfo.missing_fan": "Fehlender Lüfter!",
+  "machineInfo.cooldown": "Kühlt ab",
+
+  "jei.category.butterator.butter_amount": "Buttermenge kann zwischen 1 und 4 variieren"
+}

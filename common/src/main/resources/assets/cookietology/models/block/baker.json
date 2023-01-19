@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "cookietology:block/baker_top",
+    "bottom": "cookietology:block/baker_bottom",
+    "front": "cookietology:block/baker_front",
+    "side": "cookietology:block/baker_side"
+  }
+}

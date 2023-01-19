@@ -1,0 +1,28 @@
+{
+  "type": "cookietology:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "cookietology:soft_butter"
+    },
+    {
+      "item": "cookietology:soft_butter"
+    },
+    {
+      "item": "cookietology:flour"
+    },
+    {
+      "item": "cookietology:flour"
+    }
+  ],
+  "result": {
+    "item": "cookietology:soft_dough",
+    "count": 2
+  },
+  "attempts": 10
+}

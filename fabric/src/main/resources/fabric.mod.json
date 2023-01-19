@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "cookietology",
+  "version": "${version}",
+  "name": "Cookietology",
+  "description": "A mod that makes Minecraft cookies actually useful. What can go wrong?",
+  "authors": [
+    "EterDelta",
+    "ZestyBlaze"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "MIT License",
+  "icon": "assets/cookietology/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.cookietology.fabric.CookietologyFabric"
+    ],
+    "client": [
+      "net.cookietology.fabric.CookietologyFabricClient"
+    ]
+  },
+  "mixins": [
+    "cookietology-common.mixins.json"
+  ],
+  "depends": {
+    "fabric": "*",
+    "minecraft": ">=1.19.2",
+    "architectury": ">=6.2.43"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "cookietology:block/butterator_top",
+    "bottom": "cookietology:block/butterator_bottom",
+    "front": "cookietology:block/butterator_front",
+    "side": "cookietology:block/butterator_side"
+  }
+}

@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[43,)"
+#issueTrackerURL = ""
+license = "MIT License"
+
+[[mods]]
+modId = "cookietology"
+version = "${version}"
+displayName = "Cookietology"
+authors = [ "Eterdelta", "ZestyBlaze" ]
+description = '''
+A mod that makes Minecraft cookies actually useful. What can go wrong?
+'''
+#logoFile = ""
+
+[[dependencies.cookietology]]
+modId = "forge"
+mandatory = true
+versionRange = "[43,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cookietology]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.19.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cookietology]]
+modId = "architectury"
+mandatory = true
+versionRange = "[6.2.43,)"
+ordering = "AFTER"
+side = "BOTH"

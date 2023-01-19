@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.cookietology.forge.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+  ],
+  "mixins": [
+    "FoodDataMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

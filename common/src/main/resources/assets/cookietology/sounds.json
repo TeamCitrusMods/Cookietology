@@ -1,0 +1,15 @@
+{
+  "block.butterator_fan.repair": {
+    "sounds": [
+      "cookietology:block/butterator_fan/repair"
+    ],
+    "subtitle": "subtitles.cookietology.butterator_fan.repair"
+  },
+  "block.mixing_bowl.mix": {
+    "sounds": [
+      "cookietology:block/mixing_bowl/mix_1",
+      "cookietology:block/mixing_bowl/mix_2"
+    ],
+    "subtitle": "subtitles.cookietology.mixing_bowl.mix"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "itemGroup.cookietology.cookietology": "Cookietology",
+
+  "item.cookietology.soft_butter": "Soft Butter",
+  "item.cookietology.cookie": "Cookie",
+  "item.cookietology.flour": "Flour",
+  "item.cookietology.soft_dough": "Soft Dough",
+  "item.cookietology.cookie_shaped_dough": "Cookie Shaped Dough",
+  "item.cookietology.cookie_mold": "Cookie Mold",
+  "item.cookietology.simple_display": "Simple Display",
+
+  "cookie.saturation": "Saturation: %s",
+  "cookie.nutrition": "Nutrition: %s",
+  "cookie.eat_speed": "Eat Speed: %s",
+  "cookie.eat_speed.ticks": " Ticks",
+  "cookie.effects": "Effects:",
+  "dough.thickness": "Thickness: %s",
+  "dough.brilliance": "Brilliance: %s",
+
+  "block.cookietology.butterator": "Butterator",
+  "block.cookietology.butterator_fan": "Butterator Fan",
+  "block.cookietology.broken_butterator_fan": "Broken Butterator Fan",
+  "block.cookietology.mixing_bowl": "Mixing Bowl",
+  "block.cookietology.baker": "Baker",
+
+  "container.butterator": "Butterator",
+  "container.baker": "Baker",
+
+  "subtitles.cookietology.butterator_fan.repair": "Fan Repaired",
+  "subtitles.cookietology.mixing_bowl.mix": "Mixing in a bowl",
+
+  "machineInfo.missing_fan": "Missing Fan!",
+  "machineInfo.cooldown": "Cooling Down",
+
+  "jei.category.butterator.butter_amount": "Butter quantity may vary from 1 to 4"
+}

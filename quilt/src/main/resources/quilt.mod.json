@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "mixin": [
+    "cookietology-common.mixins.json"
+  ],
+  "quilt_loader": {
+    "group": "${group}",
+    "id": "cookietology",
+    "version": "${version}",
+    "name": "Cookietology",
+    "description": "A mod that makes Minecraft cookies actually useful. What can go wrong?",
+    "authors": [
+      "EterDelta",
+      "ZestyBlaze"
+    ],
+    "contact": {
+      "sources": ""
+    },
+    "license": "MIT License",
+    "icon": "assets/cookietology/icon.png",
+    "intermediate_mappings": "net.fabricmc:intermediary",
+    "environment": "*",
+    "entrypoints": {
+      "init": [
+        "net.cookietology.quilt.CookietologyQuilt"
+      ],
+      "client_init": [
+        "net.cookietology.quilt.CookietologyQuiltClient"
+      ]
+    },
+    "depends": [
+      {
+        "id": "quilt_loader",
+        "version": "*"
+      },
+      {
+        "id": "quilt_base",
+        "version": "*"
+      },
+      {
+        "id": "minecraft",
+        "version": ">=1.19.2"
+      },
+      {
+        "id": "architectury",
+        "version": ">=6.2.43"
+      }
+    ]
+  }
+}
