@@ -2,6 +2,7 @@ package net.cookietology.forge;
 
 import dev.architectury.platform.forge.EventBuses;
 import net.cookietology.Cookietology;
+import net.cookietology.CookietologyClient;
 import net.cookietology.client.gui.screens.inventory.BakerScreen;
 import net.cookietology.client.gui.screens.inventory.ButteratorScreen;
 import net.cookietology.registry.CookietologyMenus;
@@ -21,9 +22,6 @@ public class CookietologyForge {
     }
 
     private void onClientSetup(FMLClientSetupEvent event) {
-        event.enqueueWork(() -> {
-            MenuScreens.register(CookietologyMenus.BUTTERATOR.get(), ButteratorScreen::new);
-            MenuScreens.register(CookietologyMenus.BAKER.get(), BakerScreen::new);
-        });
+        event.enqueueWork(CookietologyClient::init);
     }
 }
