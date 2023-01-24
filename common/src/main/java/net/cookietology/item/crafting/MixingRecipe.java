@@ -21,9 +21,9 @@ import java.util.List;
 
 public class MixingRecipe implements IMixingRecipe {
     protected final NonNullList<Ingredient> ingredients;
-    protected final ResourceLocation id;
     protected final ItemStack result;
     protected final int attempts;
+    private final ResourceLocation id;
 
     public MixingRecipe(ResourceLocation id, NonNullList<Ingredient> ingredients, ItemStack result, int attempts) {
         this.id = id;
@@ -46,12 +46,12 @@ public class MixingRecipe implements IMixingRecipe {
     }
 
     @Override
-    public ItemStack assemble(Container p_44001_) {
+    public ItemStack assemble(Container container) {
         return this.result.copy();
     }
 
     @Override
-    public boolean canCraftInDimensions(int p_43999_, int p_44000_) {
+    public boolean canCraftInDimensions(int width, int height) {
         return true;
     }
 
@@ -113,15 +113,16 @@ public class MixingRecipe implements IMixingRecipe {
         @Override
         public MixingRecipe fromNetwork(ResourceLocation id, FriendlyByteBuf byteBuffer) {
             int ingredientsSize = byteBuffer.readVarInt();
-            NonNullList<Ingredient> ingredients = NonNullList.withSize(ingredientsSize, Ingredient.EMPTY);
+            NonNullList<Ingredient> ingredientList = NonNullList.withSize(ingredientsSize, Ingredient.EMPTY);
 
-            for (int i = 0; i < ingredients.size(); ++i) {
-                ingredients.set(i, Ingredient.fromNetwork(byteBuffer));
+            for (int i = 0; i < ingredientList.size(); ++i) {
+                ingredientList.set(i, Ingredient.fromNetwork(byteBuffer));
             }
+
             ItemStack result = byteBuffer.readItem();
             int attempts = byteBuffer.readVarInt();
 
-            return new MixingRecipe(id, ingredients, result, attempts);
+            return new MixingRecipe(id, ingredientList, result, attempts);
         }
 
         @Override
