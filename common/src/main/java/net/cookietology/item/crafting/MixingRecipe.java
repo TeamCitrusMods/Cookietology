@@ -5,6 +5,7 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
 import net.cookietology.registry.CookietologyRecipes;
 import net.cookietology.util.RecipeMatcher;
+import net.cookietology.util.RecipeUtil;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.resources.ResourceLocation;
@@ -81,22 +82,10 @@ public class MixingRecipe implements IMixingRecipe {
     }
 
     public static class Serializer implements RecipeSerializer<MixingRecipe> {
-        private static NonNullList<Ingredient> ingredientsFromJson(JsonArray jsonArray) {
-            NonNullList<Ingredient> ingredientList = NonNullList.create();
-
-            for (int i = 0; i < jsonArray.size(); ++i) {
-                Ingredient ingredient = Ingredient.fromJson(jsonArray.get(i));
-                if (!ingredient.isEmpty()) {
-                    ingredientList.add(ingredient);
-                }
-            }
-
-            return ingredientList;
-        }
 
         @Override
         public MixingRecipe fromJson(ResourceLocation id, JsonObject jsonObject) {
-            NonNullList<Ingredient> ingredients = ingredientsFromJson(GsonHelper.getAsJsonArray(jsonObject, "ingredients"));
+            NonNullList<Ingredient> ingredients = RecipeUtil.ingredientsFromJson(GsonHelper.getAsJsonArray(jsonObject, "ingredients"), false);
 
             if (ingredients.isEmpty()) {
                 throw new JsonParseException("No ingredients for mixing recipe");
