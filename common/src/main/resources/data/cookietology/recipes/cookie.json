@@ -1,0 +1,16 @@
+{
+  "type": "cookietology:baking",
+  "ingredients": [
+    {
+      "item": "cookietology:cookie_shaped_dough"
+    },
+    {
+      "item": "minecraft:cocoa_beans"
+    }
+  ],
+  "result": {
+    "item": "cookietology:cookie",
+    "count": 8
+  },
+  "bake_time": 1200
+}

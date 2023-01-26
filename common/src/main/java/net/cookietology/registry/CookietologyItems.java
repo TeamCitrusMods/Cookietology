@@ -4,12 +4,14 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.cookietology.Cookietology;
 import net.cookietology.item.CookieItem;
+import net.cookietology.item.CookieShapedDoughItem;
 import net.cookietology.item.DoughItem;
 import net.cookietology.item.MoldItem;
 import net.minecraft.core.Registry;
 import net.minecraft.world.food.Foods;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 
 public class CookietologyItems {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Cookietology.MODID, Registry.ITEM_REGISTRY);
@@ -18,7 +20,7 @@ public class CookietologyItems {
     public static final RegistrySupplier<Item> COOKIE = ITEMS.register("cookie", () -> new CookieItem((new Item.Properties()).tab(Cookietology.CREATIVE_TAB).food(Foods.COOKIE)));
     public static final RegistrySupplier<Item> FLOUR = ITEMS.register("flour", () -> new Item((new Item.Properties()).tab(Cookietology.CREATIVE_TAB)));
     public static final RegistrySupplier<Item> SOFT_DOUGH = ITEMS.register("soft_dough", () -> new DoughItem((new Item.Properties()).tab(Cookietology.CREATIVE_TAB)));
-    public static final RegistrySupplier<Item> COOKIE_SHAPED_DOUGH = ITEMS.register("cookie_shaped_dough", () -> new DoughItem((new Item.Properties()).tab(Cookietology.CREATIVE_TAB)));
+    public static final RegistrySupplier<Item> COOKIE_SHAPED_DOUGH = ITEMS.register("cookie_shaped_dough", () -> new CookieShapedDoughItem((new Item.Properties()).tab(Cookietology.CREATIVE_TAB)));
     public static final RegistrySupplier<Item> COOKIE_MOLD = ITEMS.register("cookie_mold", () -> new MoldItem((new Item.Properties()).tab(Cookietology.CREATIVE_TAB), COOKIE_SHAPED_DOUGH.get()));
     public static final RegistrySupplier<Item> SIMPLE_DISPLAY = ITEMS.register("simple_display", () -> new Item((new Item.Properties()).tab(Cookietology.CREATIVE_TAB)));
 

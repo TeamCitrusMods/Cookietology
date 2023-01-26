@@ -11,5 +11,5 @@ public interface IBakingRecipe extends Recipe<Container> {
         return CookietologyRecipes.BAKING.get();
     }
 
-    int getCookTime();
+    int getBakeTime();
 }

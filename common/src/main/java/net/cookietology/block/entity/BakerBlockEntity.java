@@ -129,7 +129,7 @@ public class BakerBlockEntity extends BaseContainerBlockEntity implements Worldl
     }
 
     private static int getTotalCookTime(Level level, Container container) {
-        return level.getRecipeManager().getRecipeFor(CookietologyRecipes.BAKING.get(), container, level).map(IBakingRecipe::getCookTime).orElse(200);
+        return level.getRecipeManager().getRecipeFor(CookietologyRecipes.BAKING.get(), container, level).map(IBakingRecipe::getBakeTime).orElse(200);
     }
 
     @Override

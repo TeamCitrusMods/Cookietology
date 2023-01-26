@@ -10,7 +10,7 @@ import net.minecraft.world.level.Level;
 
 import java.util.List;
 
-public class DoughItem extends Item {
+public class DoughItem extends Item implements IBakeable {
     public static final DoughProperties DEFAULT_PROPERTIES = new DoughProperties(5, 1);
 
     public DoughItem(Properties properties) {
@@ -22,6 +22,10 @@ public class DoughItem extends Item {
         DoughProperties doughProperties = CookieHelper.getDoughProperties(itemStack);
         components.add(Component.translatable("dough.thickness", doughProperties.thickness()).withStyle(ChatFormatting.GRAY));
         components.add(Component.translatable("dough.brilliance", doughProperties.brilliance()).withStyle(ChatFormatting.GRAY));
+    }
+
+    @Override
+    public void onBaked(ItemStack itemStack, ItemStack result) {
     }
 
     public record DoughProperties(int thickness, int brilliance) { }
