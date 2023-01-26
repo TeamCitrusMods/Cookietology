@@ -15,7 +15,7 @@ public class CookieShapedDoughItem extends DoughItem {
             DoughProperties properties = CookieHelper.getDoughProperties(itemStack);
 
             CookieHelper.saveCookieProperties(result,
-                    Math.abs(properties.thickness() - properties.brilliance()),
+                    properties.thickness() + properties.brilliance(),
                     properties.brilliance() * (1.0F / properties.thickness()),
                     properties.thickness() / (5 * properties.brilliance()));
         }
