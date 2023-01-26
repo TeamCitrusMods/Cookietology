@@ -15,7 +15,7 @@ public class RecipeUtil {
 
         for (int i = 0; i < jsonArray.size(); ++i) {
             Ingredient ingredient = Ingredient.fromJson(jsonArray.get(i));
-            if (!allowEmpties && !(ingredient.isEmpty() || Arrays.stream(ingredient.getItems()).anyMatch(ItemStack::isEmpty))) {
+            if (!allowEmpties && (ingredient.isEmpty() || Arrays.stream(ingredient.getItems()).anyMatch(ItemStack::isEmpty))) {
                 throw new JsonParseException("Ingredient cannot be allowed to be empty");
             }
 
