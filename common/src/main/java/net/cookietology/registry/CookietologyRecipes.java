@@ -23,7 +23,7 @@ public class CookietologyRecipes {
     public static final RegistrySupplier<RecipeSerializer<BakingRecipe>> BAKING_SERIALIZER = RECIPE_SERIALIZERS.register("baking", BakingRecipe.Serializer::new);
     public static final RegistrySupplier<RecipeSerializer<DoughCompressingRecipe>> DOUGH_COMPRESSING_SERIALIZER = RECIPE_SERIALIZERS.register("crafting_special_doughcompressing", () -> new SimpleRecipeSerializer<>(DoughCompressingRecipe::new));
     public static final RegistrySupplier<RecipeSerializer<DoughMoldingRecipe>> DOUGH_MOLDING_SERIALIZER = RECIPE_SERIALIZERS.register("crafting_special_doughmolding", () -> new SimpleRecipeSerializer<>(DoughMoldingRecipe::new));
-    public static final RegistrySupplier<RecipeSerializer<DoughBrillianceRecipe>> DOUGH_BRILLIANCE_SERIALIZER = RECIPE_SERIALIZERS.register("mixing_special_doughbrilliance", () -> new SimpleRecipeSerializer<>(DoughBrillianceRecipe::new));
+    public static final RegistrySupplier<RecipeSerializer<DoughBrillianceRecipe>> DOUGH_BRILLIANCE_SERIALIZER = RECIPE_SERIALIZERS.register("crafting_special_doughbrilliance", () -> new SimpleRecipeSerializer<>(DoughBrillianceRecipe::new));
 
     //public static final RecipeType<IMixingRecipe> MIXING = RecipeType.register(Cookietology.MODID + ":mixing");
     //public static final RecipeType<IBakingRecipe> BAKING = RecipeType.register(Cookietology.MODID + ":baking");
