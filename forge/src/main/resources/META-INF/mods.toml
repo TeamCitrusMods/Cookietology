@@ -7,7 +7,7 @@ license = "MIT License"
 modId = "cookietology"
 version = "${version}"
 displayName = "Cookietology"
-authors = [ "Eterdelta", "ZestyBlaze" ]
+authors = [ "EterDelta", "ZestyBlaze" ]
 description = '''
 A mod that makes Minecraft cookies actually useful. What can go wrong?
 '''
