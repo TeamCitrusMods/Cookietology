@@ -1,0 +1,9 @@
+{
+  "type": "cookietology:molding",
+  "mold": {
+    "item": "cookietology:cookie_mold"
+  },
+  "result": {
+    "item": "cookietology:cookie_shaped_dough"
+  }
+}

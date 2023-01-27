@@ -4,15 +4,9 @@ import net.minecraft.world.item.Item;
 import org.jetbrains.annotations.Nullable;
 
 public class MoldItem extends Item {
-    private final Item moldResult;
 
-    public MoldItem(Properties properties, Item moldResult) {
+    public MoldItem(Properties properties) {
         super(properties);
-        this.moldResult = moldResult;
-    }
-
-    public Item getMoldResult() {
-        return moldResult;
     }
 
     @Nullable

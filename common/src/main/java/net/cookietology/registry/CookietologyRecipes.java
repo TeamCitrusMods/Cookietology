@@ -9,7 +9,7 @@ import net.cookietology.item.crafting.MixingRecipe;
 import net.cookietology.item.crafting.BakingRecipe;
 import net.cookietology.item.crafting.special.DoughBrillianceRecipe;
 import net.cookietology.item.crafting.special.DoughCompressingRecipe;
-import net.cookietology.item.crafting.special.DoughMoldingRecipe;
+import net.cookietology.item.crafting.MoldingRecipe;
 import net.minecraft.core.Registry;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
@@ -21,8 +21,8 @@ public class CookietologyRecipes {
 
     public static final RegistrySupplier<RecipeSerializer<MixingRecipe>> MIXING_SERIALIZER = RECIPE_SERIALIZERS.register("mixing", MixingRecipe.Serializer::new);
     public static final RegistrySupplier<RecipeSerializer<BakingRecipe>> BAKING_SERIALIZER = RECIPE_SERIALIZERS.register("baking", BakingRecipe.Serializer::new);
+    public static final RegistrySupplier<RecipeSerializer<MoldingRecipe>> MOLDING_SERIALIZER = RECIPE_SERIALIZERS.register("molding", MoldingRecipe.Serializer::new);
     public static final RegistrySupplier<RecipeSerializer<DoughCompressingRecipe>> DOUGH_COMPRESSING_SERIALIZER = RECIPE_SERIALIZERS.register("crafting_special_doughcompressing", () -> new SimpleRecipeSerializer<>(DoughCompressingRecipe::new));
-    public static final RegistrySupplier<RecipeSerializer<DoughMoldingRecipe>> DOUGH_MOLDING_SERIALIZER = RECIPE_SERIALIZERS.register("crafting_special_doughmolding", () -> new SimpleRecipeSerializer<>(DoughMoldingRecipe::new));
     public static final RegistrySupplier<RecipeSerializer<DoughBrillianceRecipe>> DOUGH_BRILLIANCE_SERIALIZER = RECIPE_SERIALIZERS.register("crafting_special_doughbrilliance", () -> new SimpleRecipeSerializer<>(DoughBrillianceRecipe::new));
 
     //public static final RecipeType<IMixingRecipe> MIXING = RecipeType.register(Cookietology.MODID + ":mixing");
