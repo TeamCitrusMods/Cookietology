@@ -21,6 +21,9 @@
     ],
     "client": [
       "net.cookietology.fabric.CookietologyFabricClient"
+    ],
+    "jei_mod_plugin": [
+      "net.cookietology.compat.jei.CookietologyPlugin"
     ]
   },
   "mixins": [
