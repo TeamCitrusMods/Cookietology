@@ -13,7 +13,7 @@ import net.minecraft.world.level.Level;
 import java.util.List;
 
 public class CookieItem extends Item {
-    public static final CookieProperties DEFAULT_PROPERTIES = new CookieProperties(32, 0.1F, 2);
+    public static final CookieProperties DEFAULT_PROPERTIES = new CookieProperties(6, 0.2F, 1);
 
     public CookieItem(Properties properties) {
         super(properties);
