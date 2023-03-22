@@ -13,11 +13,11 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(value = FoodData.class, remap = false)
+@Mixin(FoodData.class)
 public abstract class FoodDataMixin {
     @Shadow public abstract void eat(int i, float f);
 
-    @Inject(method = "eat(Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)V", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "eat(Lnet/minecraft/world/item/Item;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/LivingEntity;)V", at = @At("HEAD"), cancellable = true, remap = false)
     private void handleCookie(Item item, ItemStack itemStack, LivingEntity entity, CallbackInfo ci) {
         if(item.isEdible() && item == CookietologyItems.COOKIE.get()) {
             CookieItem.CookieProperties cookieProperties = CookieHelper.getCookieProperties(itemStack);
